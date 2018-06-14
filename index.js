@@ -1,9 +1,7 @@
 require('babel-polyfill');
 require('webrtc-adapter');
 
-var Instascan = {
-  Scanner: require('./src/scanner'),
-  Camera: require('./src/camera')
-};
+import Scanner from './src/scanner';
+import Camera from './src/camera';
 
-module.exports = Instascan;
+export {Scanner, Camera};
